@@ -30,7 +30,7 @@ namespace ToDoList.Api
         {
 
             services.AddDbContext<ToDoListContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("BancoLocal")));
+                options.UseNpgsql(Configuration.GetConnectionString("BancoLocal")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

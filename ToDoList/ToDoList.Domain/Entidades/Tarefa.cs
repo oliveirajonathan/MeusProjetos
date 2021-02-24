@@ -2,13 +2,13 @@ namespace ToDoList.Domain.Entidades
 {
     public class Tarefa
     {
-        public Tarefa(string descricao, bool conluido)
+        public Tarefa(string descricao, bool concluido)
         {
             Descricao = descricao;
-            Conluido = conluido;
+            Concluido = concluido;
         }
         public int Id { get; set; }
         public string Descricao { get; set; }
-        public bool Conluido { get; set; }
+        public bool Concluido { get; set; }
     }
 }
